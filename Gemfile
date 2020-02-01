@@ -28,9 +28,10 @@ gem 'lograge'
 group :development do
   gem 'bullet'
   gem 'capistrano', '~> 3.5.0', group: :capistrano, require: false
-  gem 'capistrano-rvm',     require: false
+  #gem 'capistrano-rvm',     require: false
   gem 'capistrano-rails',   require: false
   gem 'capistrano-bundler', require: false
+  gem 'capistrano-opscomplete'
   gem 'capistrano-sidekiq', require: false
   gem 'mqtt', :git => 'https://github.com/njh/ruby-mqtt.git'
   gem 'ed25519',            require: false
