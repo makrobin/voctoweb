@@ -3,6 +3,7 @@
 #set :tmp_dir,         "/srv/media/#{fetch(:application)}/tmp"
 set :tmp_dir, "/var/www/voctoweb_s/tmp"
 set :deploy_to, "/var/www/voctoweb_s"
+set :stage, :development
 server "voctoweb-app01-stage.c3voc.makandra.de", user: "deploy-votocweb_s", roles: %w{app web}, procfile: "Procfile.sidekiq"
 
 set :bundle_without,  %w(development test sqlite3).join(' ')

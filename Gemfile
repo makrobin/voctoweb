@@ -24,6 +24,7 @@ gem 'utf8-cleaner'
 
 # Simplified production logging
 gem 'lograge'
+gem 'bullet'
 
 group :development do
   gem 'bullet'
@@ -79,7 +80,7 @@ gem 'api-pagination'
 
 # GraphQL
 gem 'graphql'
-gem 'graphiql-rails', group: :development
+gem 'graphiql-rails'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
