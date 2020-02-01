@@ -4,6 +4,7 @@ source 'https://rubygems.org'
 gem 'rails', '~> 5.1.0'
 gem 'dotenv-rails'
 
+# TODO kann das weg?
 gem 'activeadmin'
 
 gem 'tinymce-rails'
@@ -16,10 +17,6 @@ gem 'foreman'
 gem 'redis-rails'
 gem 'exception_notification'
 
-# Bundle puma application server
-gem 'puma'
-gem 'puma_worker_killer'
-
 gem 'utf8-cleaner'
 
 # Simplified production logging
@@ -29,12 +26,9 @@ gem 'bullet'
 group :development do
   gem 'bullet'
   gem 'capistrano', '~> 3.5.0', group: :capistrano, require: false
-  #gem 'capistrano-rvm',     require: false
   gem 'capistrano-rails',   require: false
   gem 'capistrano-bundler', require: false
-  gem 'capistrano-opscomplete'
-  gem 'capistrano-sidekiq', require: false
-  gem 'mqtt', :git => 'https://github.com/njh/ruby-mqtt.git'
+  gem 'capistrano-opscomplete', require: false
   gem 'ed25519',            require: false
   gem 'bcrypt_pbkdf',       require: false
 end
